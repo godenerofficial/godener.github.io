@@ -35,13 +35,7 @@
       min-height: 60vh;
     }
 
-    h1 {
-      font-size: 4rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      font-weight: normal;
-      line-height: 1.1;
-    }
+    /* Remove h1 styles since heading is replaced */
 
     h2 {
       font-size: 1rem;
@@ -82,8 +76,9 @@
 
     /* Responsive tweaks */
     @media (max-width: 480px) {
-      h1 {
-        font-size: 3rem;
+      /* Adjust logo size on small screens */
+      main img {
+        max-width: 200px;
       }
       h2 {
         font-size: 0.9rem;
@@ -100,8 +95,9 @@
 </head>
 <body>
   <main>
-    <h1>GODENER</h1>
-    <h2>LAUNCHES 09.2025</h2>
+    <!-- Replace the heading with an image of your logo -->
+    <img src="logo.png" alt="Godener Logo" style="max-width: 300px; height: auto;" />
+    <h2>LAUNCHES 09.25</h2>
     <nav class="social-links" aria-label="Social media links">
       <a href="https://www.instagram.com/godenerofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -110,4 +106,14 @@
       </a>
       <a href="https://www.youtube.com/@godenerofficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M23.498 6.186a2.966 2.966 0 00-2.09-2.092C19.795 3.5 12 3.5 12 3.5s-7.795 0-9.408.594a2.966 2.966 0 00-2.09 2.092A31.324 31.324 0 000 12a31.324 31.324 0 00.502 5
+          <path d="M23.498 6.186a2.966 2.966 0 00-2.09-2.092C19.795 3.5 12 3.5 12 3.5s-7.795 0-9.408.594a2.966 2.966 0 00-2.09 2.092A31.324 31.324 0 000 12a31.324 31.324 0 00.502 5.814 2.966 2.966 0 002.09 2.092c1.613.594 9.408.594 9.408.594s7.795 0 9.408-.594a2.966 2.966 0 002.09-2.092A31.324 31.324 0 0024 12a31.324 31.324 0 00-.502-5.814zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+        </svg>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    &copy; Godener, 2025
+  </footer>
+</body>
+</html>
