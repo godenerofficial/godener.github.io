@@ -35,7 +35,23 @@
       min-height: 60vh;
     }
 
-    /* Removed h2 styles since the heading sentence is removed */
+    /* Removed h1 styles as we replaced it with an image */
+
+    h2 {
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin-top: 0;
+    }
+
+    .logo {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
 
     .social-links {
       margin-top: 40px;
@@ -67,8 +83,11 @@
     /* Responsive tweaks */
     @media (max-width: 480px) {
       /* Adjust logo size on small screens */
-      main img {
+      .logo {
         max-width: 200px;
+      }
+      h2 {
+        font-size: 0.9rem;
       }
       .social-links {
         gap: 20px;
@@ -82,8 +101,9 @@
 </head>
 <body>
   <main>
-    <!-- Logo image replacing heading -->
-    <img src="logo.png" alt="Godener Logo" style="max-width: 300px; height: auto;" />
+    <!-- Replace this img src with the actual path to your logo -->
+    <img src="path/to/your-logo.png" alt="Godener Logo" class="logo" />
+    <h2>LAUNCHES 09.2025</h2>
     <nav class="social-links" aria-label="Social media links">
       <a href="https://www.instagram.com/godenerofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
