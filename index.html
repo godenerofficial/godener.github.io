@@ -4,113 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Godener - Launching Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Coldiac&display=swap" rel="stylesheet" />
   <style>
-    /* ... other styles ... */
-    h1 {
-      font-family: 'Coldiac', cursive;
-      font-size: 4rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      font-weight: normal;
-      line-height: 1.1;
-    }
-    /* ... rest of styles ... */
-  </style>
-</head>
-
-  <style>
-    @font-face {
-      font-family: 'Coldiac';
-      src: url('Coldiac-Regular.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    body {
+    /* Reset some default styles */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
       background-color: white;
       color: black;
-      font-family: Arial, sans-serif;
+      font-family: "Times New Roman", Times, serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
+      padding: 20px;
     }
 
-    h1 {
-      font-family: 'Coldiac', serif;
-      font-size: 3rem;
-      letter-spacing: 0.4em;
-      text-transform: uppercase;
-      margin: 0;
-    }
-
-    .launch-date {
-      font-size: 0.9rem;
-      margin-top: 12px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font-family: Arial, sans-serif;
-    }
-
-    .socials {
+    main {
+      flex-grow: 1;
       display: flex;
-      gap: 24px;
-      margin-top: 40px;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      gap: 24px; /* increased space */
+      min-height: 60vh;
     }
 
-    .socials a {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
+    /* Remove h1 styles since heading is replaced */
+
+    h2 {
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin-top: 0;
     }
 
-    .socials img {
-      width: 100%;
-      height: auto;
-      opacity: 0.7;
-      filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      gap: 30px;
+      font-size: 0; /* removes space around inline SVG */
+    }
+
+    .social-links a svg {
+      display: block;
+      width: 18px;
+      height: 18px;
+      fill: black;
+      transition: fill 0.3s;
+    }
+
+    .social-links a:hover svg,
+    .social-links a:focus svg {
+      fill: #555;
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.75rem;
-      color: #666;
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: black;
+      font-family: Arial, sans-serif;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.4rem;
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      /* Adjust logo size on small screens */
+      main img {
+        max-width: 200px;
       }
-      .launch-date {
-        font-size: 0.75rem;
+      h2 {
+        font-size: 0.9rem;
       }
-      .socials a {
-        width: 18px;
+      .social-links {
+        gap: 20px;
+      }
+      .social-links a svg {
+        width: 16px;
+        height: 16px;
       }
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>GODENER</h1>
-    <div class="launch-date">Launching September 2025</div>
-
-    <div class="socials">
-      <a href="https://instagram.com/godenerofficial" target="_blank" aria-label="Instagram">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram Logo" />
+    <!-- Replace the heading with an image of your logo -->
+    <img src="logo.png" alt="Godener Logo" style="max-width: 300px; height: auto;" />
+    <h2>LAUNCHING SEPTEMBER 2025</h2>
+    <nav class="social-links" aria-label="Social media links">
+      <a href="https://www.instagram.com/godenerofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.25 2a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/>
+        </svg>
       </a>
-      <a href="https://youtube.com/@godenerofficial" target="_blank" aria-label="YouTube">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube Logo" />
+      <a href="https://www.youtube.com/@godenerofficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M23.498 6.186a2.966 2.966 0 00-2.09-2.092C19.795 3.5 12 3.5 12 3.5s-7.795 0-9.408.594a2.966 2.966 0 00-2.09 2.092A31.324 31.324 0 000 12a31.324 31.324 0 00.502 5.814 2.966 2.966 0 002.09 2.092c1.613.594 9.408.594 9.408.594s7.795 0 9.408-.594a2.966 2.966 0 002.09-2.092A31.324 31.324 0 0024 12a31.324 31.324 0 00-.502-5.814zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+        </svg>
       </a>
-    </div>
+    </nav>
   </main>
 
-  <footer>&copy; 2025 Godener. All rights reserved.</footer>
+  <footer>
+    &copy; Godener, 2025
+  </footer>
 </body>
 </html>
