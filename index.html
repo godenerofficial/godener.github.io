@@ -31,11 +31,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 12px; /* reduced space */
+      gap: 0; /* removed gap */
       min-height: 60vh;
     }
-
-    /* Remove h1 styles since heading is replaced */
 
     h2 {
       font-size: 1rem;
@@ -44,7 +42,7 @@
       font-weight: normal;
       color: black;
       font-family: Arial, sans-serif;
-      margin-top: 0;
+      margin-top: 8px; /* smaller margin for tighter spacing */
     }
 
     .social-links {
@@ -76,7 +74,6 @@
 
     /* Responsive tweaks */
     @media (max-width: 480px) {
-      /* Adjust logo size on small screens */
       main img {
         max-width: 200px;
       }
@@ -95,7 +92,6 @@
 </head>
 <body>
   <main>
-    <!-- Replace the heading with an image of your logo -->
     <img src="logo.png" alt="Godener Logo" style="max-width: 300px; height: auto;" />
     <h2>LAUNCHING 09.2025</h2>
     <nav class="social-links" aria-label="Social media links">
