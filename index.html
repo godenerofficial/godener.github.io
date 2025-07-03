@@ -2,35 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Godener - Launching Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Godener – Launching Soon</title>
   <style>
+    @font-face {
+      font-family: 'Coldiac';
+      src: url('Coldiac-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
+      margin: 0;
+      background-color: white;
+      color: black;
       font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      padding: 50px;
     }
+
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
+      font-family: 'Coldiac', serif;
+      font-size: 3rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      margin: 0;
     }
-    p {
-      font-size: 1.5em;
-      margin-top: 0;
-      color: #aaa;
+
+    .launch-date {
+      font-size: 0.9rem;
+      margin-top: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: Arial, sans-serif;
     }
-    .container {
-      max-width: 600px;
-      margin: auto;
+
+    .socials {
+      display: flex;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .socials a {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+    }
+
+    .socials img {
+      width: 100%;
+      height: auto;
+      opacity: 0.7;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.75rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+      .launch-date {
+        font-size: 0.75rem;
+      }
+      .socials a {
+        width: 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Godener</h1>
-    <p>Launching Soon</p>
-  </div>
+  <main>
+    <h1>GODENER</h1>
+    <div class="launch-date">Launching September 2025</div>
+
+    <div class="socials">
+      <a href="https://instagram.com/godenerofficial" target="_blank" aria-label="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" />
+      </a>
+      <a href="https://youtube.com/@godenerofficial" target="_blank" aria-label="YouTube">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Youtube%28amin%29.png" alt="YouTube Logo" />
+      </a>
+    </div>
+  </main>
+
+  <footer>&copy; 2025 Godener. All rights reserved.</footer>
 </body>
 </html>
